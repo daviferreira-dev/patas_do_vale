@@ -1,11 +1,22 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="aplicacao">
+    <header class="cabecalho">
+      <div>
+        <h1>Patas do Vale</h1>
+        <p>Portal de adoção de animais</p>
+      </div>
+
+      <nav class="menu">
+        <!-- Completar -->
+      </nav>
+    </header>
+
+    <RouterView />
+
+    <footer class="rodape">
+      <p>Projeto desenvolvido por Nome do Integrante 1 e Nome do Integrante 2</p>
+    </footer>
+  </div>
 </template>
 
 <style scoped></style>
