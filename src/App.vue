@@ -7,14 +7,16 @@
       </div>
 
       <nav class="menu">
-        <!-- Completar -->
+        <RouterLink class="botao" to="/inicio">Inicio<RouterLink/>
+        <RouterLink class="botao" to="/animais">Animais<RouterLink/>
+        <RouterLink class="botao" to="/cuidados">Cuidados<RouterLink/>
       </nav>
     </header>
 
     <RouterView />
 
     <footer class="rodape">
-      <p>Projeto desenvolvido por Nome do Integrante 1 e Nome do Integrante 2</p>
+      <p>Projeto desenvolvido por Cassiano Soares, Davi Ferreira e Guilherme Gonçalves</p>
     </footer>
   </div>
 </template>

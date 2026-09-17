@@ -14,10 +14,10 @@ const router = createRouter({
             component: InicioView
         },
         {
-
+            // Rota name: animais
         },
         {
-            
+            // Rota name: cuidados
         }
     ]
 })
