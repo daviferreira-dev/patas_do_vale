@@ -7,17 +7,23 @@ import CuidadosView from '../views/CuidadosView.vue'
 const router = createRouter({
     history: createWebHistory(),
 
-    router: [
+    routes: [
         {
             path: "/",
             name: "inicio",
             component: InicioView
         },
         {
-            // Rota name: animais
+            path: "/animais",
+            name: "animais",
+            component: AnimaisView
         },
         {
-            // Rota name: cuidados
+            path: "/cuidados",
+            name: "cuidados",
+            component: CuidadosView
         }
     ]
 })
+
+export default router
