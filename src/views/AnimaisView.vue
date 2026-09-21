@@ -1,6 +1,7 @@
 <script setup>
   import cachorro from '../assets/images/cachorro.jpg'
   import gato from '../assets/images/gato.jpg'
+  import mel from '../assets/images/mel.jpg'
 </script>
 
 <template>
@@ -53,6 +54,26 @@
           <p class="comportamento"><strong>Comportamento:</strong> tranquila e carinhosa</p>
         </div>
       </article>
+
+      <article class="cartao">
+        <img :src="mel" alt="Cadela filhote deitada sobre um tapete claro" />
+
+        <div class="conteudo">
+          <h3>Mel</h3>
+
+          <div class="marcadores">
+            <span class="marcador">6 meses</span>
+            <span class="marcador">Porte pequeno</span>
+          </div>
+
+          <p class="descricao">
+            Mel é curiosa, esperta e cheia de energia. Está aprendendo os primeiros comandos e
+            precisa de uma família paciente.
+          </p>
+
+          <p class="comportamento"><strong>Comportamento:</strong> dócil e brincalhona</p>
+        </div>
+      </article>
     </section>
 
     <section class="aviso">
@@ -95,7 +116,7 @@
 
 .lista {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 32px;
 }
@@ -176,7 +197,13 @@ object-position: 25% 28%;
   background-color: #17553f;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
+  .lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
   .lista {
     grid-template-columns: 1fr;
   }
